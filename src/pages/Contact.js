@@ -27,14 +27,14 @@ const Contact = () => {
                     </h3>
                 </div>
 
-                <form className="form-items">
+                <form >
                   <div className="sender-info">
                    <input className="name-input" type="text" name="user_name" placeholder="Name" />
                    <input className="email-input" type="email" name="user_email" placeholder="Email" />
                   </div>
                     <textarea className="message grey" name="message" placeholder="Message" />
                     <input className="sub-btn" type="submit" value="Send" />
-                </form>
+               
             </div>
         </div>
     );
