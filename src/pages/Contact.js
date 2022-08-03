@@ -1,33 +1,11 @@
-import React, { useRef } from "react";
-import emailjs from "@emailjs/browser";
+
 import {IoLocationSharp} from "react-icons/io5"
 import {FaPhoneAlt} from "react-icons/fa"
 import {HiMail} from "react-icons/hi"
 import {BsLinkedin} from "react-icons/bs";
 
 const Contact = () => {
-    const form = useRef();
-
-    const sendEmail = (e) => {
-        e.preventDefault();
-
-        emailjs
-            .sendForm(
-                "service_dtm9jpj",
-                "template_uxl2rso",
-                form.current,
-                "E6eiNhMf-UT8up89D"
-            )
-            .then(
-                (result) => {
-                    console.log(result.text);
-                },
-                (error) => {
-                    console.log(error.text);
-                }
-            );
-    };
-
+    
     return (
         <div className="contact-area">
             <div className="header">
@@ -49,7 +27,7 @@ const Contact = () => {
                     </h3>
                 </div>
 
-                <form className="form-items" ref={form} onSubmit={sendEmail}>
+                <form className="form-items">
                   <div className="sender-info">
                    <input className="name-input" type="text" name="user_name" placeholder="Name" />
                    <input className="email-input" type="email" name="user_email" placeholder="Email" />
