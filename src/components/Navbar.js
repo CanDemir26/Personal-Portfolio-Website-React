@@ -20,7 +20,7 @@ export default function Navbar() {
             </ul>
 
             <ul>
-            <li><a href="Contact">Contact</a></li>
+            <li><a href="contact">Contact</a></li>
             </ul>
             
     </header>
