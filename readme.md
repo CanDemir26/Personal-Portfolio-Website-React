@@ -4,7 +4,7 @@ Technologies I used in this project
 
 - React Js 
 - React Router
-- react Modal
+- React Modal
 - EmailJs Library
 - Pure CSS 
 
